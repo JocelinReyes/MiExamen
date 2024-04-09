@@ -1,0 +1,22 @@
+//realizaremos un codigo que desduzca que es un trangulorectangulo
+#include<stdio.h>
+int main(){
+    float l, l2, l3, cua, cua2, cua3, c, c2;
+    printf("Longitud del lado mas corto");
+    scanf("%f", &l);
+    printf("Longitud del lado mediano");
+    scanf("%f", &l2);
+    printf("Longitud del lado mas grande");
+    scanf("%f", &l3);
+    cua=l*l;
+    cua2=l2*l2;
+    cua3=l3*l3;
+    c= cua+cua2;
+    c2=c*c;
+    if (c2==cua3){
+        printf("El triangulo es rectangulo");
+    }else{
+        printf("No es rectangulo");
+    }
+    return 0; 
+}
