@@ -1,0 +1,18 @@
+//imprimira la tabla demultiplicar del numero dado de teclado en ascendente y descendente
+#include<stdio.h>
+int main(){
+    int tabla [1000];
+    int numero, contador=0, contador2=1000;
+    printf("Que numero vamos a multiplicar?\n");
+    scanf("%d", &numero);
+    while (contador<=1000){
+        printf("%d * %d = %d ", numero, contador, numero*contador);
+        contador++;
+    }
+    while (contador2>=0){
+        printf("%d * %d = %d ", numero, contador2, numero*contador2);
+        contador2--;
+    }
+    return 0;
+    
+}
