@@ -1,0 +1,19 @@
+//deducira si se merece el descuento o no por ser cliente
+#include<stdio.h>
+int main(){
+    float can, des=0, total, desNoCli=0.05, desCli=0.20;
+    int cliente=0;
+    printf("Cuanto vas a pagar?\n");
+    scanf("%f", &can);
+    printf(" Eres cliente? si >1, no> 0\n");
+    scanf("%d", &cliente);
+    if (cliente ==0|| cliente==1){
+        des=(cliente==1)?desCli:desNoCli;
+    }else{
+        printf("Dato invalido\n");
+    }
+    total=(can)-(can*des);
+    printf("Total de descuento es de %f \n", des);
+    printf("Total a pagar es de: %f\n", total);
+    return 0;
+}
